@@ -64,7 +64,7 @@
 ```
 ---
 
-### <span id="add/chinese" >二、增加汉语</span>
+### <span id="add-chinese" >二、增加汉语</span>
 | 接口方法 | 接口描述 |
 |:-------------:|:-------------|
 | [/add/chinese](#add-chinese) | 增加汉语 |
