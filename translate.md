@@ -18,12 +18,11 @@
 ```
 
 #### 2、 请求参数
-|   参数名称   | 必选    | 类型     | 说明      |
-| :------: | :---- | :----- | ------- |
-| english  | true  | string | 存入的英语单词 |
-| chinese  | false | string | 存入的汉语   |
-| category | true  | string | 存入数据库分类 |
-|  remark  | false | string | 标记字段    |
+|  参数名称   | 必选    | 类型     | 说明      |
+| :-----: | :---- | :----- | ------- |
+| english | true  | string | 存入的英语单词 |
+| chinese | false | string | 存入的汉语   |
+| remark  | false | string | 标记字段    |
 
 ---
 
@@ -31,8 +30,7 @@
 ```
 {
 "english":"response",
-"chinese":"你好",
-"category":"1",
+"chinese":"",	
 "remark":""
 }
 ```
@@ -55,12 +53,8 @@
     "status": 200,
     "errmsg": "成功",
     "data": {
-        "englishid": null,
-        "english": "data",
-        "chinese": "数据",
-        "category": 1,
-        "remark": "",
-        "day": null
+        "chinese": "响应",
+        "english": "response"
     }
 }
 ```
@@ -77,21 +71,19 @@
 ```
 
 #### 2、 请求参数
-|   参数名称   | 必选    | 类型     | 说明      |
-| :------: | :---- | :----- | ------- |
-| english  | true  | string | 存入的英语单词 |
-| chinese  | false | string | 存入的汉语   |
-| category | true  | string | 存入数据库分类 |
-|  remark  | false | string | 标记字段    |
+|  参数名称   | 必选    | 类型     | 说明      |
+| :-----: | :---- | :----- | ------- |
+| english | true  | string | 存入的英语单词 |
+| chinese | false | string | 存入的汉语   |
+| remark  | false | string | 标记字段    |
 
 ---
 
 #### 3、 调用样例
 ```
 {
-"english":"response",
-"chinese":"你好",
-"category":"1",
+"english":"",
+"chinese":"响应",	
 "remark":""
 }
 ```
@@ -114,12 +106,8 @@
     "status": 200,
     "errmsg": "成功",
     "data": {
-        "englishid": null,
-        "english": "data",
-        "chinese": "数据",
-        "category": 1,
-        "remark": "",
-        "day": null
+        "chinese": "响应",
+        "english": "response"
     }
 }
 ```

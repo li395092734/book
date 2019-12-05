@@ -1,10 +1,11 @@
-## 增加单词服务
+删除单词服务
+
 |  序号  | 接口方法                               | 接口描述     |
 | :--: | :--------------------------------- | :------- |
 |  一   | [/delete/english](#delete-english) | 根据英文进行删除 |
 |  二   | [/delete/id](#delete-id)           | 根据ID进行删除 |
 
-## 增加单词服务列表
+## 删除单词服务列表
 
 ### <span id="delete-english" >一、根据英文进行删除</span>
 |                接口方法                | 接口描述     |
@@ -17,21 +18,21 @@
 ```
 
 #### 2、请求参数
-|   参数名称   | 必选    | 类型     | 说明      |
-| :------: | :---- | :----- | ------- |
-| english  | true  | string | 存入的英语单词 |
-| chinese  | false | string | 存入的汉语   |
-| category | true  | string | 存入数据库分类 |
-|  remark  | false | string | 标记字段    |
+|   参数名称    | 必选    | 类型     | 说明      |
+| :-------: | :---- | :----- | ------- |
+| englishId | false | string | ID      |
+|  english  | true  | string | 存入的英语单词 |
+|  chinese  | false | string | 存入的汉语   |
+|  remark   | false | string | 标记字段    |
 
 ---
 
 #### 3、 调用样例
 ```
 {
-"english":"response",
-"chinese":"你好",
-"category":"1",
+"englishId":"",
+"english":"Final",
+"chinese":"",	
 "remark":""
 }
 ```
@@ -53,14 +54,7 @@
 {
     "status": 200,
     "errmsg": "成功",
-    "data": {
-        "englishid": null,
-        "english": "data",
-        "chinese": "数据",
-        "category": 1,
-        "remark": "",
-        "day": null
-    }
+    "data": "Final"
 }
 ```
 ---
@@ -76,21 +70,21 @@
 ```
 
 #### 2、请求参数
-|   参数名称   | 必选    | 类型     | 说明      |
-| :------: | :---- | :----- | ------- |
-| english  | true  | string | 存入的英语单词 |
-| chinese  | false | string | 存入的汉语   |
-| category | true  | string | 存入数据库分类 |
-|  remark  | false | string | 标记字段    |
+|   参数名称    | 必选    | 类型     | 说明      |
+| :-------: | :---- | :----- | ------- |
+| englishId | true  | string | ID      |
+|  english  | false | string | 存入的英语单词 |
+|  chinese  | false | string | 存入的汉语   |
+|  remark   | false | string | 标记字段    |
 
 ---
 
 #### 3、 调用样例
 ```
 {
-"english":"response",
-"chinese":"你好",
-"category":"1",
+"englishId":"26",
+"english":"",
+"chinese":"",	
 "remark":""
 }
 ```
@@ -112,14 +106,7 @@
 {
     "status": 200,
     "errmsg": "成功",
-    "data": {
-        "englishid": null,
-        "english": "data",
-        "chinese": "数据",
-        "category": 1,
-        "remark": "",
-        "day": null
-    }
+    "data": 26
 }
 ```
 ---
